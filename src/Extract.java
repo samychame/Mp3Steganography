@@ -7,12 +7,6 @@ public class Extract {
         byte[] extractedData = extractData(mp3Bytes, 0); // Extract all available bits
         String message = new String(extractedData);
 
-        // Trim everything after the first `\0`
-//        int nullIndex = message.indexOf("\0");
-//        if (nullIndex != -1) {
-//            message = message.substring(0, nullIndex);
-//        }
-
         return message;
     }
 
